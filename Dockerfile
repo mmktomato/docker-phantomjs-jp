@@ -18,7 +18,7 @@ RUN apt-get update \
     && locale-gen \
 
     && rm -rf phantomjs-${PAHNTOMJS_VERSION}-linux-x86_64.tar.bz2 \
-    && apt-get purge -y curl bzip2 locales \
+    && apt-get purge -y curl bzip2 \
     && apt-get autoremove -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
